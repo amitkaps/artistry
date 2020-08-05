@@ -1,2 +1,3 @@
-# artistry
+# Artistry
+
 Generative Visualisation 

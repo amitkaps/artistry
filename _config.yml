@@ -1,0 +1,11 @@
+collections:
+  sketches:
+    output: true
+
+defaults:
+  - scope:
+      path: "sketches"
+    values:
+      layout: "sketch"
+# plugins:
+#   - jekyll-default-layout
