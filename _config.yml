@@ -1,3 +1,8 @@
+url: http://amitkaps.com/stories
+baseurl: /stories
+
+permalink: pretty
+
 collections:
   sketches:
     output: true

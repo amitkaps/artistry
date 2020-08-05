@@ -7,7 +7,7 @@ layout: default
 <section >
   <dl class="grid">
   {% for sketch in site.sketches %}
-    <dt><a class="grid-item" href="{{ sketch.url }}"> {{sketch.title}}</a></dt>
+    <dt><a class="grid-item" href="{{site.baseurl}}{{ sketch.url }}"> {{sketch.title}}</a></dt>
     <dd>{{ sketch.description }}</dd>
     {% endfor %}
 
