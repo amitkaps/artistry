@@ -39,6 +39,7 @@ body {
 main {
   margin: 0 auto;
   max-width: 40rem;
+  padding: 0px 20px;
 }
 
 pre,
@@ -56,4 +57,34 @@ pre {
 
 .highlight {
   padding: 1rem;
+}
+
+
+canvas {
+  border: 1px solid #eee;
+}
+
+#code {
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 640px) {
+  canvas {
+    float: right;
+    width: 40%;
+  }
+
+  #code {
+    margin-right: 40%;
+  }
+}
+
+div.highlight {
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+footer {
+  padding-top: 10px;
+  clear: both;
 }
