@@ -3,5 +3,13 @@
   <title>Artistry</title>
   <meta name="description" content="Generative Visualisation" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles.css" />
+  {% capture styles %} {% include styles.css %} {%endcapture %}
+  <style>
+    {{ styles | scssify }}
+  </style>
+
+  {% capture highlight %} {% include monokai.css %} {%endcapture %}
+  <style>
+    {{ highlight | scssify }}
+  </style>
 </head>

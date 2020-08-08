@@ -2,6 +2,11 @@ url: https://amitkaps.com/artistry
 baseurl: /artistry
 
 permalink: pretty
+theme: null
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: compressed
 
 collections:
   sketches:
@@ -12,5 +17,3 @@ defaults:
       path: "sketches"
     values:
       layout: "sketch"
-# plugins:
-#   - jekyll-default-layout

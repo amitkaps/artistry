@@ -41,8 +41,19 @@ main {
   max-width: 40rem;
 }
 
-script {
-  display: block;
-  font-family: var(-mono);
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--mono); /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+pre {
   white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.highlight {
+  padding: 1rem;
 }

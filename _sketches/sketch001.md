@@ -5,12 +5,12 @@ layout: sketch
 permalink: trees
 ---
 
+```js
+{% include_relative sketch001.js %}
+```
+
 <script>
 
-const canvas = document.querySelector('canvas'); 
-const ctx = canvas.getContext('2d'); 
-ctx.fillStyle = 'green'; 
-ctx.fillRect(10, 10, 100, 100);
-
+{% include_relative sketch001.js %}
 
 </script>
