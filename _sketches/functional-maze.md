@@ -3,6 +3,7 @@ title: Functional Maze
 description: Functional Maze
 layout: sketch
 permalink: functional-maze
+jslib: artistry
 ---
 
 ```js

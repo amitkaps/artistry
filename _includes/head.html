@@ -13,5 +13,15 @@
     {{ highlight | scssify }}
   </style>
 
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/artistry.js"></script>
+  {% if page.jslib == "artistry" %}
+  <script
+    type="text/javascript"
+    src="{{ site.baseurl }}/assets/artistry.js"
+  ></script>
+  {% elsif page.jslib == "vis" %}
+  <script
+    type="text/javascript"
+    src="{{ site.baseurl }}/assets/vis.js"
+  ></script>
+  {% endif %}
 </head>

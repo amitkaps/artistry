@@ -38,7 +38,7 @@ body {
 
 main {
   margin: 0 auto;
-  max-width: 40rem;
+  max-width: 60rem;
   padding: 0px 20px;
 }
 
@@ -58,7 +58,6 @@ pre {
 .highlight {
   padding: 1rem;
 }
-
 
 canvas {
   border: 1px solid #eee;
