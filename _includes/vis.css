@@ -1,0 +1,105 @@
+:root {
+  /*Typography */
+  --mono: menlo, consolas, roboto mono, ubuntu monospace, noto mono, oxygen mono,
+    liberation mono, monospace;
+  --sans: -apple-system, segoe ui, roboto, droid sans, oxygen, ubuntu, cantarell,
+    fira sans, helvetica neue, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  --serif: charter, times, georgia, serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  cursor: default;
+  line-height: var(--lh-body);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  word-break: break-word;
+}
+
+/* Section Elements */
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+main {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  flex: 1;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+#sketch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.right {
+  flex: 1;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--mono); /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 1rem;
+}
+
+canvas {
+  border: 1px solid #eee;
+}
+
+.highlight {
+  margin-bottom: 0;
+  height: 100%;
+}

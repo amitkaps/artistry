@@ -1,7 +1,7 @@
 ---
 title: Trees
 description: A tree structure to generate images
-layout: sketch
+layout: vis
 permalink: trees
 jslib: vis
 ---

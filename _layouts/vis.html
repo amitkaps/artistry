@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
+  <meta charset="utf-8" />
+  <title>Artistry</title>
+  <meta name="description" content="Generative Visualisation" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% capture styles %} {% include vis.css %} {%endcapture %}
+  <style>
+    {{ styles | scssify }}
+  </style>
+
+  {% capture highlight %} {% include monokai.css %} {%endcapture %}
+  <style>
+    {{ highlight | scssify }}
+  </style>
+  <script
+    type="text/javascript"
+    src="{{ site.baseurl }}/assets/vis.js"
+  ></script>
   <body>
-    <main>
-      <h1>{{page.title}}</h1>
-      <section id="sketch"></section>
-      <section id="code">
+    <main class="flex">
+      <section class="left">
+        <div id="sketch"></div>
+      </section>
+      <section id="code" class="right">
+        <header>
+          <h1 class="title">{{page.title}}</h1>
+        </header>
         {{ content }}
       </section>
-      {% include footer.html %}
     </main>
   </body>
 </html>

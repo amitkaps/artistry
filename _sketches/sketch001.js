@@ -16,16 +16,16 @@ const data = (x) => sequence(x).map(zeroOne);
 // View-Render
 const width = 400;
 const height = 400;
-const rectWidth = width / dimensions;
-const rectHeight = height / dimensions;
 
-const p = Point(1, 2);
-const r = Rectangle(Point(1, 2), Size(200, 300));
+const r = rectangle(point(0, 0), size(width / parts, width / parts));
 console.log(r);
 // Not Working
 const shape = (x, y, w, h, f) => {
   return { rect: { x: x, y: y, w: w, h: h, fill: f } };
 };
+
+render([r], "#sketch");
+
 //const shapes = data(parts).map(rect(0, 0, rectWidth, rectHeight, 0))
 //console.log(shapes);
 
