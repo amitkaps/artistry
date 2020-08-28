@@ -6,13 +6,8 @@ permalink: functional-maze
 jslib: artistry
 ---
 
-<div> 
-  
 ```js
 {% include_relative functional-maze.js %}
-```
-
-```js
 ```
 
 <script>
@@ -20,5 +15,3 @@ jslib: artistry
 {% include_relative functional-maze.js %}
 
 </script>
-
-dfl;ksjfldsajfklads

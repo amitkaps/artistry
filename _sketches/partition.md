@@ -1,17 +1,17 @@
 ---
-title: Trees
+title: Partition
 description: A tree structure to generate images
 layout: vis
-permalink: trees
+permalink: partition
 jslib: vis
 ---
 
 ```js
-{% include_relative sketch001.js %}
+{% include_relative partition.js %}
 ```
 
 <script>
 
-{% include_relative sketch001.js %}
+{% include_relative partition.js %}
 
 </script>
